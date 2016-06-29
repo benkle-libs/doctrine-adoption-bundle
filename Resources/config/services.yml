@@ -1,0 +1,13 @@
+services:
+    benkle.doctrine.adoption.collector:
+        class: Benkle\DoctrineAdoption\Collector
+        public: false
+
+    benkle.doctrine.adoption.metadata_listener:
+        class: Benkle\DoctrineAdoption\MetadataListener
+        public: false
+        tags:
+            - name: doctrine.event_listener
+              event: loadClassMetadata
+        arguments:
+            - "@benkle.doctrine.adoption.collector"
