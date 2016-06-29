@@ -1,0 +1,20 @@
+{
+    "name": "benkle/doctrine-adoption-bundle",
+    "description": "A small set of services to make doctrines inheritance mapping more useful",
+    "type": "symfony-bundle",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "require": {
+        "benkle/doctrine-adoption": "1.0.*",
+        "php": ">= 5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "Benjamin Kleiner",
+            "email": "bizzl@users.sourceforge.net"
+        }
+    ]
+}
